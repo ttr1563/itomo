@@ -2263,6 +2263,73 @@ header.hero h3 {
   color: #ffffff;
 }
 
+.greeting h4 {
+    margin: 7px 0 10px 60px
+}
+
+.greeting .face img {
+    margin: 7px 0 65px 45px;
+    width:  100px;
+}
+
+.service-area .row {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+
+.service-area .service-box {
+  margin-bottom: 15px;
+}
+
+.service-title {
+  margin: 7px 0 20px 60px;
+}
+
+.service-title h5{
+  font-size: 28px;
+}
+
+.service-child-title {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.service-child-title::after{
+  background: #7AE2DE;
+  bottom:  0;
+  content:  '';
+  left:  50%;
+  position: absolute;
+  width: 30px;
+  height:  2px;
+  margin-left:  -15px;
+}
+
+.service-list {
+  background: #F1F1F1;
+  padding: 15px;
+}
+
+.service-list li {
+  margin-top: 10px;
+}
+
+.service-list li:first-child {
+  margin-top: 0;
+}
+
 @-webkit-keyframes scroll-inner {
   from {
     margin-top: 15%;
@@ -2536,24 +2603,11 @@ Latest articles
   overflow: hidden;
   height: 160px;
   max-height: 250px;
-  background-color: #000000;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
-.latest-articles .has-overlay:after,
-.latest-articles .freebies .has-overlay:after {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  background-color: rgba(65, 74, 82, 0.6);
-}
+
 .latest-articles select#inputArticle-Sort {
   font-size: 13px;
   width: 300px;
@@ -2743,7 +2797,7 @@ footer .footer-branding p {
   line-height: 1.333;
 }
 footer .footer-branding .footer-branding-logo {
-  width: 150px;
+  width: 125px;
   margin-top: 10px;
 }
 footer .footer-nav {
@@ -3775,8 +3829,14 @@ Responsive Media Queries
     margin-top: 20px;
   }
 
-  h4 {
+  .greeting h4, h4 {
     margin-left: 0;
+  }
+
+  .greeting  .face {
+    position: absolute;
+    top: -70px;
+    right:  20px;
   }
 
   .freebies .content-left {
